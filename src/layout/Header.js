@@ -9,7 +9,7 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Nav className="ml-auto">
                     <Nav.Link>Home</Nav.Link>
-                    <Nav.Link>Profile</Nav.Link>
+                    <Nav.Link>Skills</Nav.Link>
                     <Nav.Link>Project</Nav.Link>
                     <Nav.Link>Contact</Nav.Link>
                     </Nav>

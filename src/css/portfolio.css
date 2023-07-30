@@ -1,0 +1,111 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.home_container {
+    min-height: 90vh;
+    background-color: lightgray;
+    padding: 0;
+}
+
+.layout_home {
+    background-color: lightblue;
+}
+
+.layout_skills {
+    background-color: #f9c51d;
+}
+
+.layout_projects {
+    background-color: lightyellow;
+}
+
+.layout_profile {
+    background-color: #fff;
+}
+
+.section_title {
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.section_container {
+    padding: 0 100px;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.section_card {
+    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
+    border: none !important;
+    width: 300px;
+}
+
+.section_card-header {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f57a00;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.175);
+}
+
+.profile_pic_container {
+    position: relative;
+}
+
+.profile_detail_container {
+    padding: 4rem 0;
+}
+
+.profile_pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    overflow: hidden;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.profile_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_blank {
+    padding: 1.5rem;
+}
+
+.profile_icon {
+    font-size: 35px !important;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.profile_image_icon {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.profile_school {
+    margin-left: 3.2rem;
+    font-size: 14px;
+}
+
+.profile_link {
+    padding-left: 0.5rem !important;
+}
+
+.skills_image {
+    width: 100%;
+    display: block;
+}

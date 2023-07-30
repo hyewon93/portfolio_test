@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
         <Container>
             <div style={{textAlign:'center'}}>
-            Footer
+                © 2023. Hyewon Bae. All rights reserved.
             </div>
         </Container>
         </footer>

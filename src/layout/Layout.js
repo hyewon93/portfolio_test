@@ -1,14 +1,36 @@
-import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 
-const Layout = ({children}) => {
+import '../css/portfolio.css';
+
+const Layout = ({layoutType}) => {
+
+    const [typeClass, setTypeClass] = useState();
+
+    useEffect(()=>{
+
+        switch(layoutType) {
+            case 'home':
+                setTypeClass("layout_home");
+                break;
+            case 'skills':
+                setTypeClass("layout_skills");
+                break;
+            case 'projects':
+                setTypeClass("layout_projects");
+                break;
+            case 'contact':
+                setTypeClass("layout_contact");
+                break;
+            default:
+                break;
+        }
+    }, [layoutType]);
+
     return (
-        <>
-            <Header />
-            {children}
-            <Footer />
-        </>
+        <div className={'home_container ' + typeClass}>
+
+        </div>
     )
 }
 
