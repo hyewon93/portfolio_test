@@ -4,7 +4,7 @@ import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Home from './layout/Home';
 import Skills from './layout/Skills';
-import Projects from './layout/Projects';
+import Career from './layout/Career';
 import Profile from './layout/Profile';
 
 import './css/bootstrap.css';
@@ -19,7 +19,7 @@ function App() {
         <Row><Col><Home /></Col></Row>
         <Row><Col><Profile /></Col></Row>
         <Row><Col><Skills /></Col></Row>
-        <Row><Col><Projects /></Col></Row>
+        <Row><Col><Career /></Col></Row>
       </Container>
       <Footer />
     </>

@@ -13,14 +13,14 @@ const Layout = ({layoutType}) => {
             case 'home':
                 setTypeClass("layout_home");
                 break;
+            case 'profile':
+                setTypeClass("layout_profile");
+                break;
             case 'skills':
                 setTypeClass("layout_skills");
                 break;
-            case 'projects':
-                setTypeClass("layout_projects");
-                break;
-            case 'contact':
-                setTypeClass("layout_contact");
+            case 'career':
+                setTypeClass("layout_career");
                 break;
             default:
                 break;

@@ -4,14 +4,14 @@ const Header = () => {
     return(
         <header>
             <Navbar bg="primary" expand="lg">
-                <Container>
-                <Navbar.Brand>PORTFOLIO</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Container className="portfolio_nav">
+                    <Navbar.Brand>HW's Portfolio</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Nav className="ml-auto">
-                    <Nav.Link>Home</Nav.Link>
-                    <Nav.Link>Skills</Nav.Link>
-                    <Nav.Link>Project</Nav.Link>
-                    <Nav.Link>Contact</Nav.Link>
+                        <Nav.Link>Home</Nav.Link>
+                        <Nav.Link>Profile</Nav.Link>
+                        <Nav.Link>Skills</Nav.Link>
+                        <Nav.Link>Career</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

@@ -6,10 +6,15 @@ header {
     z-index: 1000;
 }
 
+.portfolio_nav {
+    padding: 0 1rem !important;
+}
+
 .home_container {
     min-height: 90vh;
     background-color: lightgray;
     padding: 0;
+    width: 100%;
 }
 
 .layout_home {
@@ -20,8 +25,8 @@ header {
     background-color: #f9c51d;
 }
 
-.layout_projects {
-    background-color: lightyellow;
+.layout_Career {
+    background-color: #eee;
 }
 
 .layout_profile {
@@ -108,4 +113,49 @@ header {
 .skills_image {
     width: 100%;
     display: block;
+}
+
+.career_section {
+    margin: 2rem;
+}
+
+.career_pic_container {
+    position: relative;
+}
+
+.career_detail_container {
+    border-left: 1px solid #aaa !important;
+    padding: 1rem 3rem !important;
+}
+
+.career_pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    overflow: hidden;
+    position: absolute;
+    /* left: 25%; */
+    /* top: 25%; */
+    border: 1px solid #aaa;
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.career_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.career_blank {
+    padding: 1rem;
+}
+
+.career_underline {
+    border: 1px solid #aaa;
+    margin: 1.5rem 0 !important;
+}
+
+.career_badge {
+    margin-right: 0.5rem;
 }
