@@ -172,3 +172,55 @@ header {
 
 .react-pdf__Page__textContent {display: none;}
 .react-pdf__Page__annotations {display: none;}
+
+.project_modal > .modal-dialog {
+    max-width: 950px !important;
+    width: 950px !important;
+}
+
+.project_key {
+    margin-bottom: 1rem !important;
+}
+
+.project_badge {
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+
+.project_image_container {
+    padding: 1rem;
+}
+
+.project_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.project_image.active {
+    display: block;
+}
+
+.project_icon {
+    font-size: 30px !important;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.project_image_desc {
+    display: none;
+}
+
+.project_image_desc.active {
+    display: block;
+}
+
+.project_page_container {
+    display: flex;
+    margin: 1.5rem 0 0 0;
+}
+
+.project_page {
+    justify-content: center;
+}

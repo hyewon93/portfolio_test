@@ -16,18 +16,18 @@ const Skills = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <div class="card border-secondary mb-3 section_card">
-                                <div class="section_card-header">Frontend</div>
-                                <div class="card-body">
-                                    <img class="skills_image" src={skills_frontend} alt="skills_frontend"/>
+                            <div className="card border-secondary mb-3 section_card">
+                                <div className="section_card-header">Frontend</div>
+                                <div className="card-body">
+                                    <img className="skills_image" src={skills_frontend} alt="skills_frontend"/>
                                 </div>
                             </div>
                         </Col>
                         <Col>
-                            <div class="card border-secondary mb-3 section_card">
-                                <div class="section_card-header">Backend</div>
-                                <div class="card-body">
-                                    <img class="skills_image" src={skills_backend} alt="skills_backend"/>
+                            <div className="card border-secondary mb-3 section_card">
+                                <div className="section_card-header">Backend</div>
+                                <div className="card-body">
+                                    <img className="skills_image" src={skills_backend} alt="skills_backend"/>
                                 </div>
                             </div>
                         </Col>
@@ -35,20 +35,20 @@ const Skills = () => {
                             <Container>
                                 <Row>
                                     <Col>
-                                    <div class="card border-secondary mb-3 section_card">
-                                        <div class="section_card-header">Version Control</div>
-                                        <div class="card-body">
-                                            <img class="skills_image" src={skills_versionControl} alt="skills_versionControl"/>
+                                    <div className="card border-secondary mb-3 section_card">
+                                        <div className="section_card-header">Version Control</div>
+                                        <div className="card-body">
+                                            <img className="skills_image" src={skills_versionControl} alt="skills_versionControl"/>
                                         </div>
                                     </div>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col>
-                                    <div class="card border-secondary mb-3 section_card">
-                                        <div class="section_card-header">Communication</div>
-                                        <div class="card-body">
-                                            <img class="skills_image" src={skills_communication} alt="skills_communication"/>
+                                    <div className="card border-secondary mb-3 section_card">
+                                        <div className="section_card-header">Communication</div>
+                                        <div className="card-body">
+                                            <img className="skills_image" src={skills_communication} alt="skills_communication"/>
                                         </div>
                                     </div>
                                     </Col>

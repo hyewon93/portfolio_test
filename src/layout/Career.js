@@ -7,12 +7,30 @@ import PDFViewer from '../components/PDFViewer';
 
 import recommendation_pdf from '../file/hyewon_letter_of_recommendation.pdf';
 import mchn_logo from '../images/career/mchn_logo.png';
+import ProjectModal from '../components/ProjectModal';
 
 const Career = () => {
-    const [show, setShow] = useState(false);
+    const [pdfShow, setPDFShow] = useState(false);
+    const [projectShow, setProjectShow] = useState(false);
 
-    const handlePDFClose = () => setShow(false);
-    const handlePDFShow = () => setShow(true);
+    const handlePDFClose = () => setPDFShow(false);
+    const handlePDFShow = () => setPDFShow(true);
+    
+    const [project, setProject] = useState({
+        id: 1,
+        type: "MPM",
+    });
+
+    const handleProjectClose = () => setProjectShow(false);
+    const handleProjectShow = (type, id) => {
+
+        setProjectShow(true);  
+
+        setProject({
+            id: id,
+            type: type
+        })
+    }
 
     return (
         <div className="home_container layout_Career">
@@ -24,7 +42,7 @@ const Career = () => {
                     <Row className="career_section">
                         <Col className="career_pic_container" sm={4}>
                             <div className="career_pic">
-                                <img class="career_image" src={mchn_logo} alt="mchn_logo"/>
+                                <img className="career_image" src={mchn_logo} alt="mchn_logo"/>
                             </div>
                         </Col>
                         <Col className="career_detail_container" sm={8}>
@@ -52,9 +70,9 @@ const Career = () => {
                                 <Row className="career_blank"></Row>
                                 <Row>
                                     <Col>
-                                        <button type="button" class="btn btn-link career_recommendation" onClick={handlePDFShow}>
+                                        <button type="button" className="btn btn-link career_recommendation" onClick={handlePDFShow}>
                                             Letter of recommendation by Gilbert Comeau, Head of Development
-                                            <span class="material-icons career_icon">preview</span>
+                                            <span className="material-icons career_icon">preview</span>
                                         </button>
                                     </Col>
                                 </Row>
@@ -71,19 +89,20 @@ const Career = () => {
                                 </Row>
                                 <Row className="career_underline"></Row>
                                 <Row>
-                                    <Col><h4>Major Projects</h4></Col>
+                                    <Col>
+                                        <h4>Major Projects</h4>
+                                    </Col>
                                 </Row>
                                 <Row>
                                     <Col>
                                         <ListGroup>
-                                            <ListGroup.Item>3rd Party eCommerce Platform Integration</ListGroup.Item>
-                                            <ListGroup.Item>MCHN UI V3</ListGroup.Item>
-                                            <ListGroup.Item>MCHN Pay</ListGroup.Item>
-                                            <ListGroup.Item>Site Performance</ListGroup.Item>
-                                            <ListGroup.Item>Report Automation</ListGroup.Item>
-                                            <ListGroup.Item>Multi Language</ListGroup.Item>
-                                            <ListGroup.Item>Stripe Payment Intent API</ListGroup.Item>
-                                            <ListGroup.Item>Two-Factor Authentication (2FA)</ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 0)}>3rd Party eCommerce Platform Integration</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 1)}>MCHN UI V3</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 2)}>MCHN Pay</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 3)}>Site Performance</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 4)}>Report Automation</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 5)}>Stripe Payment Intent API</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 6)}>Two-Factor Authentication (2FA)</button></ListGroup.Item>
                                         </ListGroup>`
                                     </Col>
                                 </Row>
@@ -93,7 +112,7 @@ const Career = () => {
                     <Row className="career_section">
                         <Col className="career_pic_container" sm={4}>
                             <div className="career_pic">
-                                <img class="career_image" src={mchn_logo} alt="mchn_logo"/>
+                                <img className="career_image" src={mchn_logo} alt="mchn_logo"/>
                             </div>
                         </Col>
                         <Col className="career_detail_container" sm={8}>
@@ -112,7 +131,8 @@ const Career = () => {
                     </Row>
                 </Container>
             </div>
-            <PortfolioModal show={show} title="Letter of Recommendation" body={<PDFViewer pdfFile={recommendation_pdf} />} handleClose={handlePDFClose}/>
+            <PortfolioModal show={pdfShow} title="Letter of Recommendation" body={<PDFViewer pdfFile={recommendation_pdf} />} handleClose={handlePDFClose}/>
+            <ProjectModal show={projectShow} type={project.type} id={project.id} handleClose={handleProjectClose}/>
         </div>
     )
 }
