@@ -95,6 +95,8 @@ const ProjectDetail = ({type, id}) => {
                                                         <span className="material-icons">open_in_new</span>
                                                     </a>
                                                 </Col>
+                                            </Row>
+                                            <Row>
                                                 <Col>
                                                     <img className='profile_image_icon' src={github} alt="Github-icon" />
                                                     Github Code
