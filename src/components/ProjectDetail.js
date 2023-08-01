@@ -65,48 +65,46 @@ const ProjectDetail = ({type, id}) => {
                                 <Card.Img className="project_image active" ref={el => projectImages.current[0] = el} src={finale_logo} variant="top" alt="finale_logo"/>
                                 <Card.Img className="project_image" ref={el => projectImages.current[1] = el} src={recharge_logo} variant="top" alt="finale_logo"/>
                                 <Card.Body>
-                                    <Card.Text>
-                                        <Container className="project_image_desc active" ref={el => projectImageDescs.current[0] = el}>
-                                            <Row>
-                                                <Col>
-                                                    <span class="material-icons project_icon">description</span>
-                                                    API Documentation
-                                                    <a href="https://support.finaleinventory.com/hc/en-us/categories/115001160947-API-Documentation" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
-                                                        <span className="material-icons">open_in_new</span>
-                                                    </a>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <img className='profile_image_icon' src={github} alt="Github-icon" />
-                                                    Github Code
-                                                    <a href="https://github.com/hyewon93/PHP/tree/master/Finale-Inventory-Integration" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
-                                                        <span className="material-icons">open_in_new</span>
-                                                    </a>
-                                                </Col>
-                                            </Row>
-                                        </Container>
-                                        <Container className="project_image_desc" ref={el => projectImageDescs.current[1] = el}>
-                                            <Row>
-                                                <Col>
-                                                    <span class="material-icons project_icon">description</span>
-                                                    API Documentation
-                                                    <a href="https://developer.rechargepayments.com/2021-11" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
-                                                        <span className="material-icons">open_in_new</span>
-                                                    </a>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <img className='profile_image_icon' src={github} alt="Github-icon" />
-                                                    Github Code
-                                                    <a href="https://github.com/hyewon93/PHP/tree/master/Recharge-Integration" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
-                                                        <span className="material-icons">open_in_new</span>
-                                                    </a>
-                                                </Col>
-                                            </Row>
-                                        </Container>
-                                    </Card.Text>
+                                    <Container className="project_image_desc active" ref={el => projectImageDescs.current[0] = el}>
+                                        <Row>
+                                            <Col>
+                                                <span className="material-icons project_icon">description</span>
+                                                API Documentation
+                                                <a href="https://support.finaleinventory.com/hc/en-us/categories/115001160947-API-Documentation" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
+                                                    <span className="material-icons">open_in_new</span>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <img className='profile_image_icon' src={github} alt="Github-icon" />
+                                                Github Code
+                                                <a href="https://github.com/hyewon93/PHP/tree/master/Finale-Inventory-Integration" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
+                                                    <span className="material-icons">open_in_new</span>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                    <Container className="project_image_desc" ref={el => projectImageDescs.current[1] = el}>
+                                        <Row>
+                                            <Col>
+                                                <span className="material-icons project_icon">description</span>
+                                                API Documentation
+                                                <a href="https://developer.rechargepayments.com/2021-11" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
+                                                    <span className="material-icons">open_in_new</span>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <img className='profile_image_icon' src={github} alt="Github-icon" />
+                                                Github Code
+                                                <a href="https://github.com/hyewon93/PHP/tree/master/Recharge-Integration" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
+                                                    <span className="material-icons">open_in_new</span>
+                                                </a>
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </Card.Body>
                             </Card>
                         </Row>
