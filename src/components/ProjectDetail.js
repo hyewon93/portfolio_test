@@ -95,6 +95,13 @@ const ProjectDetail = ({type, id}) => {
                                                         <span className="material-icons">open_in_new</span>
                                                     </a>
                                                 </Col>
+                                                <Col>
+                                                    <img className='profile_image_icon' src={github} alt="Github-icon" />
+                                                    Github Code
+                                                    <a href="https://github.com/hyewon93/PHP/tree/master/Recharge-Integration" className="btn btn-link profile_link" target="_blank" rel='noreferrer'>
+                                                        <span className="material-icons">open_in_new</span>
+                                                    </a>
+                                                </Col>
                                             </Row>
                                         </Container>
                                     </Card.Text>
