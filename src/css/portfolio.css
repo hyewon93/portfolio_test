@@ -159,3 +159,16 @@ header {
 .career_badge {
     margin-right: 0.5rem;
 }
+
+.career_recommendation {
+    color: #2d6ba9 !important;
+    padding-left: 0 !important;
+}
+
+.career_icon {
+    vertical-align: middle;
+    margin-left: 0.3rem;
+}
+
+.react-pdf__Page__textContent {display: none;}
+.react-pdf__Page__annotations {display: none;}

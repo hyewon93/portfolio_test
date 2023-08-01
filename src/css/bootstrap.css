@@ -5634,7 +5634,7 @@ textarea.form-control-lg {
     --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
   .modal-dialog {
-    max-width: var(--bs-modal-width);
+    max-width: 700px;
     margin-right: auto;
     margin-left: auto;
   }

@@ -1,9 +1,19 @@
+import { useState } from 'react';
 import { Badge, Col, Container, ListGroup, Row } from 'react-bootstrap';
 import '../css/portfolio.css';
 
+import PortfolioModal from '../components/PortfolioModal';
+import PDFViewer from '../components/PDFViewer';
+
+import recommendation_pdf from '../file/hyewon_letter_of_recommendation.pdf';
 import mchn_logo from '../images/career/mchn_logo.png';
 
 const Career = () => {
+    const [show, setShow] = useState(false);
+
+    const handlePDFClose = () => setShow(false);
+    const handlePDFShow = () => setShow(true);
+
     return (
         <div className="home_container layout_Career">
             <div className="section_title">
@@ -42,6 +52,15 @@ const Career = () => {
                                 <Row className="career_blank"></Row>
                                 <Row>
                                     <Col>
+                                        <button type="button" class="btn btn-link career_recommendation" onClick={handlePDFShow}>
+                                            Letter of recommendation by Gilbert Comeau, Head of Development
+                                            <span class="material-icons career_icon">preview</span>
+                                        </button>
+                                    </Col>
+                                </Row>
+                                <Row className="career_blank"></Row>
+                                <Row>
+                                    <Col>
                                         <Badge className="career_badge" bg="primary">PHP</Badge>
                                         <Badge className="career_badge" bg="info">Javascript</Badge>
                                         <Badge className="career_badge" bg="success">jQuery</Badge>
@@ -52,7 +71,7 @@ const Career = () => {
                                 </Row>
                                 <Row className="career_underline"></Row>
                                 <Row>
-                                    <Col><h4>Projects</h4></Col>
+                                    <Col><h4>Major Projects</h4></Col>
                                 </Row>
                                 <Row>
                                     <Col>
@@ -93,6 +112,7 @@ const Career = () => {
                     </Row>
                 </Container>
             </div>
+            <PortfolioModal show={show} title="Letter of Recommendation" body={<PDFViewer pdfFile={recommendation_pdf} />} handleClose={handlePDFClose}/>
         </div>
     )
 }
