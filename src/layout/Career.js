@@ -99,10 +99,9 @@ const Career = () => {
                                             <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 0)}>3rd Party eCommerce Platform Integration</button></ListGroup.Item>
                                             <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 1)}>MCHN UI V3</button></ListGroup.Item>
                                             <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 2)}>MCHN Pay</button></ListGroup.Item>
-                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 3)}>Site Performance</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 3)}>Stripe Payment Intent API</button></ListGroup.Item>
                                             <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 4)}>Report Automation</button></ListGroup.Item>
-                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 5)}>Stripe Payment Intent API</button></ListGroup.Item>
-                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 6)}>Two-Factor Authentication (2FA)</button></ListGroup.Item>
+                                            <ListGroup.Item><button type="button" className="btn btn-light" onClick={() => handleProjectShow("MPM", 5)}>Two-Factor Authentication (2FA)</button></ListGroup.Item>
                                         </ListGroup>`
                                     </Col>
                                 </Row>

@@ -10,6 +10,10 @@ header {
     padding: 0 1rem !important;
 }
 
+.portfolio_nav_link {
+    color: black !important;
+}
+
 .home_container {
     min-height: 90vh;
     background-color: lightgray;
@@ -18,11 +22,12 @@ header {
 }
 
 .layout_home {
-    background-color: lightblue;
+    background-color: #fff;
 }
 
 .layout_skills {
-    background-color: #f9c51d;
+    background-color: #6393db;
+    color: #fff;
 }
 
 .layout_Career {
@@ -60,6 +65,10 @@ header {
     color: #f57a00;
     padding: 1rem 1rem;
     border-bottom: 1px solid rgb(0, 0, 0, 0.175);
+}
+
+.home_img {
+    width: inherit;
 }
 
 .profile_pic_container {

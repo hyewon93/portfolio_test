@@ -1,6 +1,6 @@
 import {Navbar, Nav, Container} from 'react-bootstrap'
 
-const Header = () => {
+const Header = ({ handleClick }) => {
     return(
         <header>
             <Navbar bg="primary" expand="lg">
@@ -8,10 +8,10 @@ const Header = () => {
                     <Navbar.Brand>HW's Portfolio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Nav className="ml-auto">
-                        <Nav.Link>Home</Nav.Link>
-                        <Nav.Link>Profile</Nav.Link>
-                        <Nav.Link>Skills</Nav.Link>
-                        <Nav.Link>Career</Nav.Link>
+                        <Nav.Link className='portfolio_nav_link' onClick={() => handleClick(1)}>Home</Nav.Link>
+                        <Nav.Link className='portfolio_nav_link' onClick={() => handleClick(2)}>Profile</Nav.Link>
+                        <Nav.Link className='portfolio_nav_link' onClick={() => handleClick(3)}>Skills</Nav.Link>
+                        <Nav.Link className='portfolio_nav_link' onClick={() => handleClick(4)}>Career</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

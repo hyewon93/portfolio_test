@@ -3,7 +3,7 @@ import { Badge, Card, Col, Container, Pagination, Row } from "react-bootstrap";
 
 import "../css/portfolio.css";
 
-import { project_ecommerce, project_mchnUI } from "./ProjectData";
+import { project_ecommerce, project_mchnUI, project_mchn_pay, project_payment_intent, project_report_auto, project_2fa } from "./ProjectData";
 
 const project_icon_format = (icon, desc, url) => {
     return(
@@ -51,6 +51,22 @@ const ProjectDetail = ({type, id}) => {
                 case 1:
                     setProject(project_mchnUI);
                     setTotalPage(project_mchnUI.images.length);
+                    break;
+                case 2:
+                    setProject(project_mchn_pay);
+                    setTotalPage(project_mchn_pay.images.length);
+                    break;
+                case 3:
+                    setProject(project_payment_intent);
+                    setTotalPage(project_payment_intent.images.length);
+                    break;
+                case 4:
+                    setProject(project_report_auto);
+                    setTotalPage(project_report_auto.images.length);
+                    break;
+                case 5:
+                    setProject(project_2fa);
+                    setTotalPage(project_2fa.images.length);
                     break;
                 default:
                     break;

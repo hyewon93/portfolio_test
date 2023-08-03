@@ -6,9 +6,8 @@ const mpmProjectList = [
     { title:"3rd Party eCommerce Platform Integration" },
     { title:"MCHN UI V3" },
     { title:"MCHN Pay" },
-    { title:"Site Performance" },
-    { title:"Report Automation" },
     { title:"Stripe Payment Intent API" },
+    { title:"Report Automation" },
     { title:"Two-Factor Authentication (2FA)" },
 ];
 
