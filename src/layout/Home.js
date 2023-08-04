@@ -1,7 +1,6 @@
-import TypingText from '../components/TypingText';
 import '../css/portfolio.css';
 
-import home_gif from "../images/home/Full stack Web Developer.gif";
+import home_gif from "../images/home/home_gif.gif";
 
 const Home = () => {
     return (

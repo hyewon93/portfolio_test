@@ -79,7 +79,8 @@ const Career = () => {
                                 <Row className="career_blank"></Row>
                                 <Row>
                                     <Col>
-                                        <Badge className="career_badge" bg="primary">PHP</Badge>
+                                        <Badge className="career_badge" bg="purple">PHP</Badge>
+                                        <Badge className="career_badge" bg="primary">REST API</Badge>
                                         <Badge className="career_badge" bg="info">Javascript</Badge>
                                         <Badge className="career_badge" bg="success">jQuery</Badge>
                                         <Badge className="career_badge" bg="danger">HTML</Badge>
@@ -111,7 +112,7 @@ const Career = () => {
                     <Row className="career_section">
                         <Col className="career_pic_container" sm={4}>
                             <div className="career_pic">
-                                <img className="career_image" src={mchn_logo} alt="mchn_logo"/>
+                                <img className="career_image" src="" alt="updating..."/>
                             </div>
                         </Col>
                         <Col className="career_detail_container" sm={8}>
@@ -122,8 +123,44 @@ const Career = () => {
                                         <h5>2016 - 2019</h5>
                                     </Col>
                                 </Row>
+                                <Row className="career_blank"></Row>
                                 <Row>
-                                    
+                                    <Col>
+                                        Airsoft is one of the most significant SI companies in the <b>airline industry</b>. 
+                                        The company is operating an in-house R&D team for airline solution and it's the only provider of self-devzeloped CRS in Korea.
+                                    </Col>
+                                </Row>
+                                <Row className="career_blank"></Row>
+                                <Row>
+                                    <Col>
+                                        As an <b>web developer</b>, I collaborated with <i><u>Asiana Airlines' IT team</u></i> for several years within the organization. 
+                                        My responsibilities included creating their <b>flight booking system</b> and gaining expertise in integrating the interface into the <b>CRS</b> (Amadeus).
+                                    </Col>
+                                </Row>
+                                <Row className="career_blank"></Row>
+                                <Row>
+                                    <Col>
+                                        <Badge className="career_badge" bg="primary">JAVA</Badge>
+                                        <Badge className="career_badge" bg="info">Spring Framework</Badge>
+                                        <Badge className="career_badge" bg="danger">Javascript</Badge>
+                                        <Badge className="career_badge" bg="success">jQuery</Badge>
+                                        <Badge className="career_badge" bg="purple">HTML</Badge>
+                                        <Badge className="career_badge" bg="warning">CSS</Badge>
+                                        <Badge className="career_badge" bg="dark">Oracle</Badge>
+                                    </Col>
+                                </Row>
+                                <Row className="career_underline"></Row>
+                                <Row>
+                                    <Col>
+                                        <h4>Major Projects</h4>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <ListGroup>
+
+                                        </ListGroup>
+                                    </Col>
                                 </Row>
                             </Container>
                         </Col>
