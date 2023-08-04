@@ -4,10 +4,11 @@ import '../css/portfolio.css';
 
 import PortfolioModal from '../components/PortfolioModal';
 import PDFViewer from '../components/PDFViewer';
+import ProjectModal from '../components/ProjectModal';
 
 import recommendation_pdf from '../file/hyewon_letter_of_recommendation.pdf';
 import mchn_logo from '../images/career/mchn_logo.png';
-import ProjectModal from '../components/ProjectModal';
+import airsoft_logo from '../images/career/airsoft_logo.png';
 
 const Career = () => {
     const [pdfShow, setPDFShow] = useState(false);
@@ -112,7 +113,7 @@ const Career = () => {
                     <Row className="career_section">
                         <Col className="career_pic_container" sm={4}>
                             <div className="career_pic">
-                                <img className="career_image" src="" alt="updating..."/>
+                                <img className="career_image" src={airsoft_logo} alt="airsoft_logo"/>
                             </div>
                         </Col>
                         <Col className="career_detail_container" sm={8}>
